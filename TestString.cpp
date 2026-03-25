@@ -14,8 +14,20 @@ TestString::~TestString()
 }
 
 void TestString::InputString(char* InString)
-{
-	
+{	
+	int StringLength = 0;
+	for (char* i = InString; *i != '\0'; i++)
+	{
+		StringLength++;
+	}
+	delete[]Data;
+	Data = new char[StringLength + 1];
+	for (int i = 0; i < StringLength; i++)
+	{
+		Data[i] = InString[i];
+		
+	}
+	Data[StringLength] = '\0';
 }
 
 void TestString::PushBack(char InputChar)
