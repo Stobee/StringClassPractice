@@ -9,12 +9,12 @@ public:
 	void InputString(char* InString);
 	void PushBack(char InputChar);
 
-	int GetLenth(char* String);
+	int GetLength();
 
 	char* operator+(char* Target);
 	const char* operator[](int index);
 
-	int GetSize();
+	
 	int GetCapacity();
 	
 

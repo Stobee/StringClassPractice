@@ -28,6 +28,7 @@ void TestString::InputString(char* InString)
 		
 	}
 	Data[StringLength] = '\0';
+	Size = StringLength;
 }
 
 void TestString::PushBack(char InputChar)
@@ -66,16 +67,16 @@ const char* TestString::operator[](int index)
 	return Data + index;
 }
 
-int TestString::GetSize()
+
+int TestString::GetCapacity()
 {
-	
-	return Size;
+	return 0;
 }
 
-int TestString::GetLenth(char* String)
+int TestString::GetLength()
 {	
 
-	return 0;
+	return Size;
 }
 
 
