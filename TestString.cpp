@@ -13,10 +13,10 @@ TestString::~TestString()
 	Data = nullptr;
 }
 
-void TestString::InputString(char* InString)
+void TestString::InputString(const char* InString)
 {	
 	int StringLength = 0;
-	for (char* i = InString; *i != '\0'; i++)
+	while (InString[StringLength] != '\0')
 	{
 		StringLength++;
 	}
@@ -39,7 +39,7 @@ void TestString::PushBack(char InputChar)
 		Capacity = Capacity * 2;
 		char* NewData = new char[Capacity];
 		
-		for (int i = 0; i < Size - 1; i++)
+		for (int i = 0; i < Size - 1 ; i++)
 		{
 			NewData[i] = Data[i];
 		}

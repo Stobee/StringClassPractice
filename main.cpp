@@ -9,16 +9,12 @@ using namespace std;
 int main()
 {
 	TestString MyArray;
-	MyArray.PushBack('a');
-	MyArray.PushBack('p');
-	MyArray.PushBack('p');
-	MyArray.PushBack('l');
-	MyArray.PushBack('e');
+	
+	MyArray.InputString("apple");
 
-	for (int i = 0; i < MyArray.GetSize(); i++)
-	{
-		cout << MyArray[i] << ', ';
-	}
+	
+		
+	
 	
 
 	

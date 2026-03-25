@@ -6,7 +6,7 @@ public:
 	~TestString();
 	
 	
-	void InputString(char* InString);
+	void InputString(const char*InString);
 	void PushBack(char InputChar);
 
 	int GetLength();
